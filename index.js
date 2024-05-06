@@ -123,3 +123,20 @@ const bublSort = (arr) => {
 
 bublSort([3, 5, 6, 1, 2, 8]);
 bublSort([4, 1, 7, 8, 5, 3]);
+
+const palinCheck = (word) => {
+  newString = "";
+  for (let char of word) {
+    newString = char + newString;
+  }
+
+  if (word === newString) {
+    console.log("yes");
+    return null;
+  }
+  console.log("No");
+  return null;
+}
+
+palinCheck("eve");
+palinCheck("palindrome");
